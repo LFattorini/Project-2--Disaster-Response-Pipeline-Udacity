@@ -61,9 +61,7 @@ The final output of the project is an **interactive web app** that takes a **mes
 
 **Distribution of Top 10 Categories by Genre**
 
-![top10cat_direct](images/top10cat_direct.png)
-![top10cat_social](images/top10cat_social.png)
-![top10cat_news](images/top10cat_news.png)
+
 
 # Note 
 
