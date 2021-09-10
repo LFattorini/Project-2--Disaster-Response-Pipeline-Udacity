@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Disaster Response Pipeline Project
 
 ### Instructions:
@@ -12,3 +13,7 @@
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+=======
+# Project-2--Disaster-Response-Pipeline-Udacity
+This project creates a machine learning pipeline to categorize disaster events from a dataset containing real messages. It includes a web app where an emergency worker can input a new message and get classification results in several categories.
+>>>>>>> 091a45a89e99f5ebbef1c01af337f3c63891ff34
