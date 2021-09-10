@@ -4,7 +4,7 @@
 
 # Goal
 
-This project creates a **machine learning pipeline** to classify disaster events from a dataset [Figure Eight](https://appen.com) containing real messages. It includes a **web app** where an emergency worker can enter a new message and get classification results in different categories.
+The project goal is to create a **machine learning pipeline to classify disaster events** from a dataset provided by [Figure Eight](https://appen.com) containing real messages. The final outcome is a **web app** where an emergency worker can **enter a new message** and **get classification results** in different categories.
 
 # Installation
 
@@ -30,16 +30,21 @@ This project creates a **machine learning pipeline** to classify disaster events
 
 # File Description
 
-The **notebooks folder** contains two jupyter notebooks that help to understanding how the pipeline scripts are built step by step:
+The **notebooks folder** contains two jupyter notebooks that help you understand how the pipeline scripts are built step by step:
 
-- **ETL Pipeline Preparation**: loads the datasets, merges them, cleans the data and stores them in a SQLite database.
-- **ML Pipeline Preparation**: loads the dataset from SQLite database, splits data into train and test set, builds a text preprocessing and ML pipeline, trains and tunes models using GridSearch (SVM, Random Forest), output reults on the test set and export the final model as a pickle file.
+- **ETL Pipeline Preparation**: Loads the datasets, merges them, cleans the data and stores them in a SQLite database.
+- **ML Pipeline Preparation**: Loads the dataset from SQLite database, splits data into train and test set, builds a text preprocessing and ML pipeline, trains and tunes models using GridSearch (SVM, Random Forest), outputs reults on the test set and exports the final model as a pickle file.
 
 **Python scripts**:
 
 - `data/process_data.py` - ETL pipeline 
 - `models/train_classifier.py` - ML Pipeline
 - `app/run.py` - Flask Web App
+
+**Datasets**:
+
+- **messages.csv**: Contains the id, message and genre, i.e. the method (direct, social, ...) the message was sent.
+- **categories.csv**: Contains the id and the categories (related, offer, medical assistance..) the message belonges to.
 
 # Results
 
@@ -50,9 +55,19 @@ The final output of the project is an **interactive web app** that takes a **mes
 
 
 
-**Classification Report running a Linear Support Vector Machine Classifier**.
+**Classification Report running a Linear Support Vector Machines Classifier**.
 
 ![classification_report](images/classification_report.png)
 
-# Licensing, Authors, Acknowledgments
+**Distribution of Top 10 Categories by Genre**
 
+![top10cat_direct](images/top10cat_direct.png)
+![top10cat_social](images/top10cat_social.png)
+![top10cat_news](images/top10cat_news.png)
+
+# Note 
+
+
+# Licensing, Authors, Acknowledgments
+This project has been completed as part of the **Data Science Nanodegree** on [Udacity](https://www.udacity.com).
+The data was collected by [Figure Eight](https://appen.com) and provided by [Udacity](https://www.udacity.com).
