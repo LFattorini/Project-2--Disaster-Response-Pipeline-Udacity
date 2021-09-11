@@ -61,10 +61,17 @@ The final output of the project is an **interactive web app** that takes a **mes
 
 **Distribution of Top 10 Categories by Genre**
 
-
+![top10cat_direct_](images/top10cat_direct.png)
+![top10cat_social_](images/top10cat_social.png)
+![top10cat_news_](images/top10cat_news.png)
 
 # Note 
 
+The dataset has highly **imbalanced classes**, i.e. there is an uniqual representation of classes. This affects the ML algorithms because the probability that the instances belong to the majority class is significantly high, so the algorithms are more likely to classify new observations to the majority class.
+
+Possible approaches to address imbalanced data are:
+- Boosting the predictive performance on minority class, using recognition-based learning or cost-sensitive learning.
+- Resampling the data (over-sampling, under-sampling, SMOTE).
 
 # Licensing, Authors, Acknowledgments
 This project has been completed as part of the **Data Science Nanodegree** on [Udacity](https://www.udacity.com).
